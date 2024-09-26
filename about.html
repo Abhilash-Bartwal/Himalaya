@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Utensil</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Assuming you have a styles.css file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        .about-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #eee;
+            display: flex;
+            justify-content: center;
+            
+            
+        }
+
+        .about-header h1 {
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        .about-section {
+            margin-top: 40px;
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+        }
+
+        .about-section h2 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .about-section p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .about-image {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        .utensil-image {
+            position: relative;
+            width: 150px; /* Adjust the size as needed */
+            height: auto;
+            opacity: 0;
+            z-index: 1;
+            transform: scale(0.8) translateX(-100%);
+            transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+        }
+
+        .utensil-left{
+            align-self: flex-start;
+        }
+        .utensil-right{
+            align-self: flex-end;
+        }
+        
+
+        /* Ensure the animation triggers right away */
+        .about-container.in-view .utensil-left,
+        .about-container.in-view .utensil-right {
+            opacity: 1;
+            transform: scale(1) translateX(0);
+        }
+
+        .mission-section {
+            background-color: #f1f1f1;
+            padding: 40px;
+            text-align: center;
+            margin-top: 40px;
+            border-radius: 10px;
+        }
+
+        .mission-section h2 {
+            font-size: 2rem;
+            color: #444;
+        }
+
+        .mission-section p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .utensil-image {
+                display: none; /* Hide utensil images on smaller screens */
+            }
+
+            .about-container {
+                padding: 15px;
+            }
+
+            .about-header h1 {
+                font-size: 2rem;
+            }
+
+            .about-section h2 {
+                font-size: 1.5rem;
+            }
+
+            .about-section p {
+                font-size: 1rem;
+            }
+
+            .mission-section h2 {
+                font-size: 1.7rem;
+            }
+
+            .mission-section p {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="about-container in-view">
+        
+        <div class="about-header">
+            <img src="https://img.freepik.com/premium-photo/container-kitchen-utensils-with-white-background_1161162-484985.jpg?semt=ais_hybrid" alt="Utensil Left" class="utensil-image utensil-left">
+        
+            <h1>About Us</h1>
+
+            <img src="https://img.freepik.com/free-photo/top-view-kitchenware-set_23-2148828729.jpg?semt=ais_hybrid" alt="Utensil Right" class="utensil-image utensil-right">
+
+        </div>
+
+        <div class="about-section">
+            <h2>Who We Are</h2>
+            <p>
+                Welcome to Utensil! We're a passionate team of kitchen enthusiasts dedicated to bringing you the finest cooking and baking tools. 
+                Our journey began with the idea that every home deserves high-quality utensils to create delicious meals, and we've been crafting 
+                and curating the best for you ever since.
+            </p>
+            <img src="https://img.freepik.com/premium-photo/collection-kitchen-utensils-including-silver-pot-spoons_1161162-485013.jpg?w=1380" alt="Our Team" class="about-image">
+        </div>
+
+        <div class="about-section">
+            <h2>Our Story</h2>
+            <p>
+                Founded in [Year], Utensil was born out of a love for cooking and a commitment to making the kitchen a more enjoyable and efficient 
+                space. From humble beginnings to a trusted name in kitchenware, we've grown alongside our community of food lovers and home chefs.
+            </p>
+            <p>
+                Over the years, we've expanded our product line to include a wide range of utensils, bakeware, and kitchen gadgets. We take pride in 
+                our selection process, ensuring that every item we offer meets our standards for quality, durability, and sustainability.
+            </p>
+        </div>
+
+        <div class="about-section">
+            <h2>Why Choose Us?</h2>
+            <p>
+                At Utensil, we're more than just a store. We're a community of people who share a passion for cooking and baking. Our commitment 
+                to customer satisfaction is unmatched, and we strive to provide products that not only meet your needs but also inspire creativity 
+                in the kitchen.
+            </p>
+            <p>
+                We believe in building lasting relationships with our customers, offering personalized service, and always being here to help you 
+                find the right tools for your kitchen.
+            </p>
+        </div>
+
+        <div class="mission-section">
+            <h2>Our Mission</h2>
+            <p>
+                Our mission is simple: to provide high-quality, eco-friendly, and durable utensils that make cooking not just easier, but more enjoyable. 
+                We believe that great tools lead to great meals, and we’re here to inspire your next culinary creation.
+            </p>
+            <p>
+                We're committed to sustainability and continually seek out eco-friendly materials and manufacturing processes. By choosing Utensil, 
+                you're supporting a brand that cares about the environment and is dedicated to making a positive impact.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Utensil. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
